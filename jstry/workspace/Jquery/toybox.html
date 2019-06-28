@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Jquery toybox</title>
+    <link rel="stylesheet" type="text/css" href="/Jquery/jquery-ui/jquery-ui.css">
+    <style>
+        .table,.table tr,.table td {
+            border: 1px solid #000;
+        }
+        .highlight {
+            background-color: #f0f0f0;
+        }
+        .highlight2 {
+            background-color: yellow;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin:0;
+        }
+        #hoverdiv {
+            display: none;
+            position: absolute;
+            font-size: 15px;
+            background-color: #fff;
+            color: #404040;
+            border: 1px solid #999;
+            padding: 10px;
+        }
+        .bold {
+            font-weight: bold;
+        }.italic {
+            font-style: italic;
+        }.underline{
+            text-decoration: underline;
+        }
+        #banana_slider{
+            display:none;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background: #000;
+            padding: 20px;
+            font-size: 15px;
+            color: #fff;
+        }
+        #verycenter{
+            position:absolute;
+            height:150;
+            width:200;
+            background-color: #000;
+        }
+        #scrollTAC{
+            height: 160px;
+            width: 300px;
+        }
+        .dropborder {
+            border: 2px solid #000;
+        }
+    </style>
+    <!--<meta charset="UTF-8">-->
+</head>
+
+<body>
+    
+    <a name="top"></a>
+    <div id="banana_slider">Wait..! You love banana..!? Come to  
+    <a href="https://pushupsite-kentakidocode.c9users.io/Bananashop.html">here</a>!<br>
+    <a href = "#" id="banana_hide">Nooooo god! No god please no!</a>
+    </div>
+    
+    <p>ui</p>
+    <p>ui</p>
+    <p>ui</p>
+    <input type="text" id="cool" value="who am i?..." />
+    <p id="text">cool text</p>
+    <input type="submit" id="click" value="You.. don't... click... me..." />
+    <input type="submit" id="howdy" value="howdy!" />;
+    <p id="1"> im 1... </p>
+    <input type="submit" id="2" value="im 2..." />
+    <p><input id="search_name" type = "text" /></p>
+    <ul id = "names">
+        <li>Kearkar Mayshgabitha</li>
+        <li>Uncle Mayrash</li>
+        <li>Banana Cake</li>
+        <li>Ashley Garmond</li>
+        <li>Stanley Alles</li>
+    </ul>
+    <p></p>
+    <input type="button" id="clickme" value="installer" />
+    <textarea id="textarea"></textarea>
+    <table class="table">
+        <tr><td>beautiful row</td>
+        <tr><td>nice row</td>
+        <tr><td>amazing row</td>
+        <tr><td>unbelievable row</td>
+        <tr><td>incrideble row</td></tr>
+        <tr><td>surprising row</td></tr>
+    </table>
+    
+    <p>Name:<br /><input id = 'name'type = "text" /></p>
+    <p>Email:<br /><input id = 'email'type = "email" size = "30" /></p>
+    <p>Confirm Email:<br /><input id = 'cemail' type = "email" size = "30" /></p>
+    <input type="button" class="submit" value="submit these!" />
+    <p></p>
+    Font Size:<input type="button" id="smaller" value="smaller" /> <input type="button" id="bigger" value="bigger" />
+    <p id = "AFtext">crazy text</p>
+    <p id = "Ftext">insane text</p>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="file" id="file"/>
+        <input type="submit" value="upload" id="upload" disabled="disabled"/>
+    </form>
+    <input type="button" id='menuclick' value="menu"/>
+    <div id="text5" style="display: none;">
+        <P id='hiddenone'>Rotten banana</P><br />
+        <P id='hiddenone'>Green banana</P><br />
+        <P id='hiddenone'>eaten banana</P><br />
+        <P id='hiddenone'>purple banana</P><br />
+    </div>
+    <select id = "selects">
+        <option value="unclecode">unclecode</option>
+        <option value="maysam">maysam</option>
+        <option value="arash">arash</option>
+    </select>
+    <span id="list_feedback"></span>
+    <p></p>
+    <textarea id ="lets_essay" rows="7" cols="25">BananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBananaBanana</textarea>
+    <span id="console_feedback"></span>
+    <p></p>
+    <input type="text" id="selectme" value="don't select part of me..." />
+    <span id="select_feedback"></span>
+    <p><a href = "#" id = "bold">('-')</a></p>
+    <span id="jikoshoukai"></span>
+    <input type="button" id="cloneme" value="clone me!" />
+    <p></p>
+    <p><textarea id="remainarea" rows="7" cols="25" maxlength="55"></textarea></p>
+    <div id="remainarea_feedback"></div>
+    <a class = "hovers" href = "http://www.google.com" hovertxt="Goggle, a cool research engine">Goggle</a>
+    <div id="hoverdiv">hi</div>
+    <p><img class = "hovers" src="/Jquery/my_purple_banana.png" hovertxt="WANTED! Killer Toxic Banana! 107$ " width="200" height="150"></p>
+    
+    bold<input type="checkbox" id="Bold">
+    italic<input type="checkbox" id="Italic">
+    underline<input type="checkbox" id="Underline">
+    <input id="transformerhelper" type="button" value="vvv transform this guy! vvv">
+    <p id = "transformer">I can transform!</p>
+    <p><input type="text" class="namecreate"/><input type="text" class="namecreate"/><input id = "conbinename" type="button" value="conbine"/><p>
+    <div id = "conbinediv"></div>
+    <p></p>
+    <p>there is a secret button around here...</p>
+    <ul class="pinselect">
+        <li>Tomie</li>
+        <li>Souichi</li>
+        <li>Bishounen</li>
+        <li>Oshikiri</li>
+    </ul>
+    <p></p>
+    <!--delete the items to check the 'has'-->
+    Impossible menu 1
+    <ul id="impossibleul">
+        <li>- magnificiant item</li>
+        <li>- irreplacable item</li>
+        <li>- precious item</li>
+    </ul>
+    <input type="button" value="Ninja hide" id="hider"/>
+    <input type="button" value="wait..! stop jutsu!" id="jutsu_pauser"/>
+    <img id = "ninjabird" src="/Jquery/birdninja.jpg" width="200" height="150">
+    <p><br></r></p>
+    <p id="miokurier">('&Delta;'):I heard that you are flying to america!</p>
+    <p id ="ikuer">(-_-):I'll be back few seconds later from America!</p>
+    <input type="button" value="Gooo!" id="startgo"/>
+    <p></p>
+    <img class="fadegalary" src="/Jquery/galary/angular js.jpg" width="180" height="160" />
+    <img class="fadegalary" src="/Jquery/galary/C.jpg" width="200" height="160" />
+    <img class="fadegalary" src="/Jquery/galary/pascal.jpg" width="160" height="160" />
+    <img class="fadegalary" src="/Jquery/galary/pickle.jpg" width="210" height="160" />
+    <img class="fadegalary" src="/Jquery/galary/python.jpg" width="220" height="160" />
+    <img class="fadegalary" src="/Jquery/galary/ruby.jpg" width="160" height="160" />
+    
+    <br>
+    <span id="copyGuy">( ' o ' ):What do you mean by cloning me!?</span>
+    <p id="hakase">(@&#1044@):I have this button!</p>
+    <p><input type="button" id="copybutton" value="copy button"></p>
+    <p><a id = "Sugar" href="#!" class="ingridiments">Sugar(10g)</a>
+        <a id = "Flour" href="#!" class="ingridiments">Flour(50g)</a>
+        <a id = "Salt" href="#!" class="ingridiments">Salt(10g)</a>
+        <a id = "Egg" href="#!" class="ingridiments">Egg(1 medium)</a>
+        <a id = "milk" href="#!" class="ingridiments">milk(50ml)</a>
+        <a id = "Choco" href="#!" class="ingridiments">Choco(5g)</a></p>
+    <select id = "recipie"><input type="text" id="final" value="type final recipie"/>
+    <input id = "input_final_food" type="button" value="create this recipe!"/>
+    </select>
+    <p></p>
+    <div id = "final_food"></div>
+    
+    <ul id="recipieingrid">
+        <li></li>
+    </ul>
+    
+    <p></p>
+    <p id="monster">('O'): I am a hungry monster! my food is text! give me some food!</p>
+    <p>give text: <input id = "kitchen"type="text" minlength="5" /><input id = "givefood"type="button" value="give text" disabled></p>
+    <p><a href="#!" id = "go_top">Go to top</a></p>
+    <p><textarea id="scrollTAC">We, banana the third of the great empire of the Bamerica, Decided to use up a system known as Banner Ban Baster which causes a harmfull gas for us. In order to pass through our country laws, they are compalsury to not to bring a Baster indeed. As the result of our new law, We might use few days per bananians and vegitarians from Banada, Banan, Banifornia, Boston, Bania and Banussia. In order to create this law, we, Bamerican Bamericans were supposed to get rid of the fifth law, "V:In order to change the law, must not supposed to include unordered community" which took 75 bears of consideration into law of Bamerica. Nowdays the Bouth Borea is having a trouble with their laws. And we mustn't follow up on them, anyway possible. As mensioned, we will not expect your in-convinienceness even though you are Bamerican Bananians. Our new law "V.Bananians' Banner Ban Baster requirements" will be set bermenently into Bamerica from late 2019, Baugust 20, 0 am. thank you.</textarea></p>
+    <p><input id="agree" type="checkbox" disabled/>I agree to the terms and conditions and banana</p>
+    <p></p>
+    <input type="textbox" id="writeuser"><input type="button" id="pushuser" value="register"/>
+    <div id="pushdiv"></div>
+    <input type="textbox" id="checkuser"><input type="button" id="lookuser" value="log in"/>
+    <div id="checkdiv"></div>
+    <p></p>
+    Malaysian time(nice date): <div id="timenowMalaysia"></div>Malaysian time(mms):<div id="timenowMalaysia2"></div>  
+    <p></p>
+    <strong>Banana Party, 12 December 2017!</strong>
+    <div id="days_left"></div>
+    <p></p>
+    <input type="button" value="It seems like the new text will be loaded from another file!" id="page_html_Load" />
+    <div id="contentLoad"></div>
+    <p></p>
+    <br>
+    (&#x2267;&#x25bd;&#x2266;):Lets get http request and reverse the text!(Using Mr.AJAX for help...)<br>
+    <p><input type="text" id="namepost"></p>
+    <textarea id="stringrequest" rows="7" cols="25"></textarea><br><input id = "httpbutton" type = "button" value="Goo Mr.AJAX!!" />
+    <div id="reversefeedback"></div>
+    <p></p>
+    <input id="newload" type="button" value="Another text is coming as well? it seems like it's coming with interesting way yo!">
+    <div id="contentLoad2"></div>
+    <p></p>
+    Email: <input type="text" id="validEmail"><span id="validator"></span><br>
+    Password: <input type="password" id="showhidepassword"><input type="checkbox" id="toggleSH">show password
+    <p></p>
+    <a id="pluginlink" href="http://kidocode.com/" >nice place called CidoKode</a>
+    <input type="button" value="stop running away!!!" id="callthatback" />
+    <p id="highlighter">Just a paragraph</p>
+    <div id="countdowner"></div><input type="button" value="start the bomb!" id="redbutton" style="color:red;">
+    <p></p>
+    <div id="DHMS">
+        <span class="days">00</span> days
+        <span class="hours">00</span> hours
+        <span class="mins">00</span> minutes and
+        <span class="secs">00</span> seconds:
+    </div>until 13 November 2019 00:00:00!(nothing really...)
+    <p></p>
+    <span id="drag">drag me</span><input type="button" value = "change_movement" id="dragchanger"/>
+    <div id="dragstate">both x and y axis</div>
+    <p></p>
+    <div style=" width: 200px; height: 200px; background-color: #000">
+        <img id="dragheart" src="/Jquery/heart.png" width="20" height="20" />
+    </div>
+    <br>
+    <img id="dragpenguin" src="/Jquery/penguin_penguin.png" width="80" height="120" />
+    <div id="penguinstate">hi im penguin!</div>
+    
+    <span id="drop">drop me</span>
+    <div id="dropper" style=" width: 200px; height: 200px; background-color: #f0f0f0"></div>
+    <ul id="coolshelf">
+        <li>magical item</li>
+        <li>powerful item</li>
+        <li>legendary item</li>
+        <li>mythical item</li>
+    </ul><br />
+    <ul id="anormousshelf">
+        <li>kindfully item</li>
+        <li>irritated item</li>
+        <li>sad item</li>
+        <li>kitimarui item</li>
+    </ul>
+    <div id="resize" style=" width: 100px; height: 100px; background-color: #ff00ff; border: 1px solid #000000"></div>
+    
+    <p></p>
+    <!--don't get me wrong! I didn't created this amazing thing!-->
+    <h1>Chaos theory</h1>
+    <img src="/Jquery/Double-compound-pendulum.gif" />
+    <div id="profcontent">
+        <h3><a href="#">What is it</a></h3>
+        <div>Chaos theory is a branch of mathematics focused on the behavior of dynamical systems that are highly sensitive to initial conditions. 'Chaos' is an interdisciplinary theory stating that within the apparent randomness of chaotic complex systems, there are underlying patterns, constant feedback loops, repetition, self-similarity, fractals, self-organization(above is one of the simplest chaos using 2 pendulum. The slight change in conditions makes a huge difference in the future affect)</div>
+        
+        <h3><a href="#">Why we use it?</a></h3>
+        <div>In cryptography, robotics, biology, physics, or any other genrores, we always have a complex, yet guessable movements. And those are all related to chaos. Also, the natures are highly related to chaos or fractals and knowing chaos is important step of understanding world</div>
+        
+        <h3><a href="#">Contact me</a></h3>
+        <div>Who am I?</div>
+    </div>
+    <p></p><br>
+    <!--don't get me wrong again! I didn't created this amazing thing!!-->
+    <input id="date" type="text" size="14" style="font-size: 13px"/>
+    <p></p>
+    <div id="datepick">
+        <span class="days">00</span> days
+        <span class="hours">00</span> hours
+        <span class="mins">00</span> minutes and
+        <span class="secs">00</span> seconds:
+    </div>
+    <br>
+    <div id="pickeddate">hello! i'm conter! conter the counter! pick the date with the textbox! and then start the  countdown!</div>
+    <input type="button" id="startdatepicked" value="timer on!!!">
+    <p></p>
+    <img id = "bananasnake" src="/Jquery/help the snake!.PNG" width="230" height="210"><br><br>
+    <div id="snakestat">the cactus seems to be falling on the snake!</div>
+    <input id = "save_snake" type="button" value="save the snake!!!"/>
+    <div id="dialog" title="Snake is now saved!"></div>
+    <p></p>
+    
+    <input id="uploader" type="button" value="upload something..!">
+    <div id="progbar" style="width:400px"></div>
+    <div id="progpercentage"></div>
+    
+    <br>
+    slider! here's multiple of 
+    <select id = "multiples">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+    </select>
+    <p></p>
+    
+    <div id="slider"></div>
+    <div id="slider_value">0</div>
+    <div id="multislider"></div>
+    <div id="multislider_value">20 to 40</div>
+    <br>
+    
+    
+    <!--can add file here-->
+    <div id="tabs">
+        <ul>
+            <li><a href="#Charliqueilanies">about Charliqueilanies</a></li>
+            <li><a href="#Nikolonaboustiandiuluse">about Nikolonaboustiandiuluse</a></li>
+            <li><a href="#Marrieanastrontiumia">about Marrieanastrontiumia</a></li>
+        </ul>
+        <div id="Charliqueilanies">
+            <p>He is a math penguin. Living in south africa. He likes to eat &#936;</p>
+        </div>
+        <div id="Nikolonaboustiandiuluse">
+            <p>He is a math lizard. Living in Japan. He likes to eat &#937;</p>
+        </div>
+        <div id="Marrieanastrontiumia">
+            <p>He is a math python. Living in Canada. He likes to eat &#928;</p>
+        </div>
+    </div><br>
+    
+    
+    put the programming tools into the boxes!<br>
+    <img class="Plogos" x = '' y = '' moves = true id = "apple" src="/Jquery/languages/apple.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "bootstrap" src="/Jquery/languages/bootstrap.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "css" src="/Jquery/languages/css.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "energysys" src="/Jquery/languages/energysys.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "flask" src="/Jquery/languages/flask.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "html" src="/Jquery/languages/html.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "joomla" src="/Jquery/languages/joomla.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "pepsi" src="/Jquery/languages/pepsi.png" width="35" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "perl" src="/Jquery/languages/Perl.svg" width="35" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "python" src="/Jquery/languages/python.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "razer" src="/Jquery/languages/Razer.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "ruby" src="/Jquery/languages/ruby.png" width="30" height="30">
+    <img class="Plogos" x = '' y = '' moves = true id = "wordpress" src="/Jquery/languages/wordpress.png" width="35" height="30">
+    
+    <div id="dradrop" style="width: 220px; height: 180px; background-color: #f0f0f0; "></div>
+    <input type="button" value="answer!" id="programming_quiz" /><br>
+    
+    <p><input type = "button" id="redirect" value= "redirect to mr google!'O'"></p>
+    <br>
+    <div id="redirectcounter"></div>
+    
+    <p>Mr. AJAX seems to be opening a lunch shops!</p>
+    <a class="dinamlink" href="/Jquery/files_to_load/pizza.php">pizza</a> /
+    <a class="dinamlink" href="/Jquery/files_to_load/sandwich.php">sandwich</a> /
+    <a class="dinamlink" href="/Jquery/files_to_load/pancake.php">pancake</a> /
+    
+    <div id="lunch_area"></div>
+    <p></p><br />
+    
+    <form id="file_upload" action="#!" method="get" enctype="multipart/form-data">
+        <p><input type="file" name="file_1" id=""/></p>
+        <p>
+            <input type="submit" value="Upload">
+            <a id="add_more" href="#!">add more</a>
+        </p>
+    </form>
+    
+    <div id="follow" style="position:absolute; left:0px; top:0px; width:100%; height:70px; background-color: #aaffaa; text-align: center; display:none; z-index: 10;">
+        <h3>Quiz cleared! You know programming at least!</h3>
+    </div><br>
+    Type a comment:<br><textarea id="comment" style="height: 90px;width: 360px;"></textarea>
+    <p>
+        Add emoticon:<br>
+        <input class="emoticon" type="button" value=":)" />
+        <input class="emoticon" type="button" value=":(" />
+        <input class="emoticon" type="button" value=":o" /><br><br>
+        
+        Add arithmetic:<br>
+        <input class="emoticon" type="button" value="+" />
+        <input class="emoticon" type="button" value="-" />
+        <input class="emoticon" type="button" value="&#247;" />
+        <input class="emoticon" type="button" value="&#215;" />
+        <input class="emoticon" type="button" value="/" />
+        <input class="emoticon" type="button" value="^" />
+        <input class="emoticon" type="button" value="&#8730;" /><br><br>
+        
+        Add logic:<br>
+        <input class="emoticon" type="button" value="=" />
+        <input class="emoticon" type="button" value="&#60;" />
+        <input class="emoticon" type="button" value="&#62;" />
+        <input class="emoticon" type="button" value="&#8800;" />
+        <input class="emoticon" type="button" value="&#8786;" />
+        <input class="emoticon" type="button" value="&#8806;" />
+        <input class="emoticon" type="button" value="&#8807;" />
+        <input class="emoticon" type="button" value="&#8776;" />
+        <input class="emoticon" type="button" value=":" />
+        <input class="emoticon" type="button" value="&#8756;" />	
+        <input class="emoticon" type="button" value="&#8757;" />
+        <input class="emoticon" type="button" value="&#65506;" />
+        <input class="emoticon" type="button" value="&#8704;" /><br><br>
+        
+        Add special operations:<br>
+        <input class="emoticon" type="button" value="&#8721;" />
+        <input class="emoticon" type="button" value="&#928;" />
+        <input class="emoticon" type="button" value="&#8747;" />
+        <input class="emoticon" type="button" value="..." />
+        <input class="emoticon" type="button" value="!" />
+        <input class="emoticon" type="button" value="&#8739;&#8739;" />
+        <input class="emoticon" type="button" value="()" />
+        <input class="emoticon" type="button" value="&#10230;" />
+        <input class="emoticon" type="button" value="lim" /><br><br>
+        
+        Add special characters:<br>
+        <input class="emoticon" type="button" value="&#8501;" />
+        <input class="emoticon" type="button" value="&#8734;" />
+        <input class="emoticon" type="button" value="&#969;" /><br><br>
+        
+        Add math constants:<br>
+        <input class="emoticon" type="button" value="&#960;" />
+        <input class="emoticon" type="button" value="e" />
+        <input class="emoticon" type="button" value="&#8730;2" />
+        <input class="emoticon" type="button" value="i" />	
+        <input class="emoticon" type="button" value="&#945;" />
+        <input class="emoticon" type="button" value="&#948;" />
+        <input class="emoticon" type="button" value="&#950;(3)" />
+        <input class="emoticon" type="button" value="&#966;" />
+        <input class="emoticon" type="button" value="&#947;" />
+        <input class="emoticon" type="button" value="&#955;" />
+        <input class="emoticon" type="button" value="&#922;" />
+        <input class="emoticon" type="button" value="&#913;" />
+        <input class="emoticon" type="button" value="&#937;" />   
+        
+    </p>
+    
+    
+    
+    
+    <br>
+    <p></p>
+    <!--jquery-->
+    <script type="text/javascript" src="jquery.js"></script>
+    <!--jquery user interface-->
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <!--plugin-->
+    <script type="text/javascript" src="myplugin.js"></script>
+    <!--javascript-->
+    <script type="text/javascript" src="toybox.js"></script>
+</body>
+
+</html>

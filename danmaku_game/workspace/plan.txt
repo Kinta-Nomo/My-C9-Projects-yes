@@ -1,0 +1,71 @@
+class Game
+    variable level
+    variable unlocked stuff
+    variable state (starting, game, end, etc..)
+
+class Enemy 
+    variable health
+    variable type
+    
+    function move(type)
+    function die()
+
+class Boss
+    variable health
+    variable type
+    
+    function move(type)
+    function die()
+
+
+class EnemyBullet
+    variable direction
+    variable velocity
+    variable harm
+    variable type
+
+
+class PlayerBullet
+    variable direction
+    variable velocity
+    variable damage
+    variable type
+    
+    function collide()
+    function kill()
+    
+
+Class Player
+    variable health
+    variable level
+    variable score
+    variable skill
+    variable type
+    
+    function shoot(type)
+    function move()
+    function die()
+    
+    
+draw 
+    background ->
+    Player ->
+    enemy ->
+    
+    
+    
+    
+Game
+    loading ->
+    company name ->
+    menu -> clicking level ->
+        draw ->
+        game starts -> win
+            reward
+                    -> lose
+            choice      -> retry
+                restart
+                        -> finish
+                menu -> Shop ->
+                
+        

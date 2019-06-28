@@ -1,0 +1,69 @@
+<html >
+<head >
+    <script src="/p5/p5.js"></script>
+    <script type="text/javascript">
+        //including p5.js
+        //v2
+        
+        function calculate(z,c,n){
+            //z and c is both complex
+            if (n == 0){
+                return [0,0,0]
+            }else{
+                if (z[0]**2+z[1]**2 > 4){
+                    while(n>255){
+                        n-=255;
+                    }
+                    return [n,200,255]
+                }
+                var zplusone = [(z[0]**2-z[1]**2)+c[0], (2*z[0]*z[1])+c[1]]
+                return calculate(zplusone,c,n-1)
+            }
+        }
+        
+        function drawMandelbrot(canvasSize){
+            colorMode(HSB);
+            
+            for (var i= 0; i < canvasSize; i++){
+                var calci = -2+(i*(4.0/(canvasSize-1)))
+                for (var j= 0; j < canvasSize; j++){
+                    var calcj = -2+(j*(4.0/(canvasSize-1)))
+        
+                    var result = calculate([0,0],[-2+(i*(4.0/(canvasSize-1))),-2+(j*(4.0/(canvasSize-1)))],5000)
+                    stroke(result[0],result[1],result[2])
+                    strokeWeight(2.5)
+            
+                    point(calci*100,calcj*100)
+                }
+            }
+        }
+        
+        function setup(){
+            createCanvas(400,400);
+            
+            translate(width/2, height/2);
+            
+            drawMandelbrot(100)
+            setTimeout(function() {
+                translate(width/2, height/2);
+                drawMandelbrot(150)
+                setTimeout(function() {
+                    translate(width/2, height/2);
+                    drawMandelbrot(200)
+                }, 1000);
+            }, 1000);
+            // drawMandelbrot(200)
+            // drawMandelbrot(300)
+        }
+        
+        function mousePressed(){
+            
+            translate(width/2, height/2);
+            
+            drawMandelbrot()
+        }
+    </script>
+</head>
+<body >
+</body>
+</html>

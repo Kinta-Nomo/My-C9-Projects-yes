@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        
+        <script>
+            var Banana1 = "rotten";
+            var Banana2 = "bitten";
+            var Banana3 = "split";
+            var Banana4 = "green";
+            var Banana5 = "nice";
+            function BCheck(b){
+                alert("Let's check this " + b + " Banana!");
+                if (b != "rotten"){
+                    console.log('rotten')
+                    alert("No mold on your banana!")
+                    if (b != "green"){
+                        alert("Your banana is yellow!");
+                        if (b != "split"){
+                            alert("Your banana isn't splited!");
+                            if (b != "bitten"){
+                                alert("Your banana is not eaten yet!");
+                                alert("Your banana is edible:)");
+                            }
+                            else{
+                                alert("Your banana is bitten:(");
+                            }
+                        }
+                        else{
+                            alert("Your banana is split!:(");
+                        }
+                    }
+                    else{
+                        alert("Your banana is still green!:(");
+                    }
+                }
+                else{
+                    alert("Your banana is rotten!:(");
+                }
+            }
+            BCheck(Banana1);
+            BCheck(Banana2);
+            BCheck(Banana3);
+            BCheck(Banana4);
+            BCheck(Banana5);
+            
+        </script>
+        
+    </body>
+</html>
